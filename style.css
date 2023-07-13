@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#scrollbar::-webkit-scrollbar {
+  display: none;
+}
+#menu:hover #userDropdown {
+  display: block;
+}
+
+.ani {
+  animation: top 0.5s linear forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 200%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 1;
+  }
+}
