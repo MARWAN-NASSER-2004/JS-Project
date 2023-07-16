@@ -3,7 +3,11 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        buttoncolor: "#696cff",
+      },
+    },
   },
   plugins: [],
 };
