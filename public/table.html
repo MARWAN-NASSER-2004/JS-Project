@@ -1,73 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/tailwindcss.css">
-</head>
-<body class="bg-[#f5f8fa]  duration-500  relative dark:bg-[#151521] ">
+    <link rel="stylesheet" href="./style/tailwindcss.css" />
+  </head>
+  <body class="bg-[#f5f8fa] duration-500 relative dark:bg-[#151521]">
+    <div class="dashboard">
+      <nav
+        class="flex px-5 py-3 text-gray-700 duration-500 rounded-lg bg-gray-50 dark:bg-[#1E293B] mb-5"
+        aria-label="Breadcrumb"
+      >
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a
+              href="#"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                ></path>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillrule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  cliprule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+                >subject</a
+              >
+            </div>
+          </li>
+        </ol>
+      </nav>
 
-<div class="dashboard ">
+      <div
+        class="text-center my-3 dark:text-white font-semibold text-3xl opacity-90 text-black"
+      >
+        <h1>follow & Search subject</h1>
+      </div>
 
-    
-  <div class="text-center my-3 dark:text-white font-semibold text-3xl opacity-90 text-black">
-    <h1>follow & Search subject </h1>
-  </div>
+      <h1 class="mt-10 mb-3 dark:text-white font-semibold opacity-90 text-blac">
+        Search by :
+      </h1>
 
-  <h1 class=" mt-10 mb-3 dark:text-white font-semibold  opacity-90 text-blac">Search by :</h1>
-    
-<form class="">
-    <div class="flex relative">
-        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
-        <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">Subject Name<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-  </svg></button>
-        <div id="dropdown" class="z-10 hidden bg-white  absolute top-[33px] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
-            <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white selectname" id="Teacher">Teacher Name</button>
-            </li>
-            <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white selectname" id="Subject">Subject Name</button>
-            </li>
-   
+      <form class="">
+        <div class="flex relative">
+          <label
+            for="search-dropdown"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            >Your Email</label
+          >
+          <button
+            id="dropdown-button"
+            data-dropdown-toggle="dropdown"
+            class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+            type="button"
+          >
+            Subject Name<svg
+              class="w-2.5 h-2.5 ml-2.5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+          <div
+            id="dropdown"
+            class="z-10 hidden bg-white absolute top-[33px] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdown-button"
+            >
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white selectname"
+                  id="Teacher"
+                >
+                  Teacher Name
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white selectname"
+                  id="Subject"
+                >
+                  Subject Name
+                </button>
+              </li>
             </ul>
-        </div>
-        <div class="relative w-full">
-            <input  id="searchdropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search ..." >
-            <button  class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                </svg>
-                <span class="sr-only">Search</span>
+          </div>
+          <div class="relative w-full">
+            <input
+              id="searchdropdown"
+              class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Search ..."
+            />
+            <button
+                id="butsearch"
+              class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search</span>
             </button>
+          </div>
         </div>
-    </div>
-</form>
+      </form>
 
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-10">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-10">
+        <table
+          class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+        >
+          <thead
+            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+          >
             <tr class="capitalize text-base">
-                <th scope="col" class="px-6 py-3">
-                    <span class="sr-only">Image</span>
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Subject
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Teacher Name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    class
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Action
-                </th>
+              <th scope="col" class="px-6 py-3">
+                <span class="sr-only">Image</span>
+              </th>
+              <th scope="col" class="px-6 py-3">Subject</th>
+              <th scope="col" class="px-6 py-3">Teacher Name</th>
+              <th scope="col" class="px-6 py-3">class</th>
+              <th scope="col" class="px-6 py-3">Action</th>
             </tr>
-        </thead>
-        <tbody id="writedata">
+          </thead>
+          <tbody id="writedata">
             <!-- <tr class="bg-white border-b capitalize dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="w-32 p-4">
                     <img src="/docs/images/products/apple-watch.png" alt="Apple Watch">
@@ -85,59 +188,70 @@
                     <a href="#" class="font-medium md:px-3 py-2 md:text-sm rounded-md text-xs px-1  bg-buttoncolor text-white   hover:underline follow duration-500">Send Request</a>
                 </td>
             </tr> -->
-  
-        </tbody>
-    </table>
-</div>
-</div>
+          </tbody>
+        </table>
+        <p
+          id="errormesage"
+          class="text-center bg-white border-b text-gray-500 dark:text-gray-400 capitalize dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+        ></p>
+      </div>
+    </div>
 
+    <script src="./js/db.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/courses.js"></script>
 
-<script src="./js/db.js"></script>
-<script src="./js/dashboard.js"></script>
-<script src="./js/courses.js"></script>
-
-<script>
-    let searchdropdown=document.getElementById('searchdropdown')
-    searchdropdown.onkeyup=(even)=>{
+    <script>
+      let searchdropdown = document.getElementById("searchdropdown");
+      searchdropdown.addEventListener("keyup", searchall);
+      document.getElementById('butsearch').addEventListener('click',()=>{
+        searchall()
+        even.target.preventdefault()
+      })
+      function searchall(even) {
         let dropdownbutton = document.getElementById("dropdown-button");
-        let va=dropdownbutton.innerText;
-        showcours().then(x=>{
-            let arr=[]
-            x.forEach(e => {
-                if(e.teacherFullname==null){
-                    e.teacherFullname='null';
-                }
-                if(dropdownbutton.innerText=='Subject Name')
-                {
-                    if(e.title.toLowerCase().includes(even.target.value.toLowerCase())){
-                        arr.push(e)
-                    }
-                }
-                else{
-                    console.log(e.teacherFullname)
-                        if(e.teacherFullname.toLowerCase().includes(even.target.value.toLowerCase().trim())){
-                            arr.push(e)
-                        }
-                }
-                
-            });
-              let writedata = document.getElementById("writedata");
-            writedata.innerHTML=''
-            arr.forEach((x) => {
-             writedata.innerHTML += write(
-                 x.img,
-                 x.title,
-                 x.teacherFullname,
-                 x.islocked,
-                 x.class
-             );
-         });
-         chanflow()
-        })
-    }
+        let va = dropdownbutton.innerText;
+        showcours().then((x) => {
+          let arr = [];
+          x.forEach((e) => {
+            if (e.teacherFullname == null) {
+              e.teacherFullname = "null";
+            }
+            if (dropdownbutton.innerText == "Subject Name") {
+              if (
+                e.title.toLowerCase().includes(even.target.value.toLowerCase())
+              ) {
+                arr.push(e);
+              }
+            } else {
+              if (
+                e.teacherFullname
+                  .toLowerCase()
+                  .includes(even.target.value.toLowerCase().trim())
+              ) {
+                arr.push(e);
+              }
+            }
+          });
+          let writedata = document.getElementById("writedata");
+          writedata.innerHTML = "";
+          arr.forEach((x) => {
+            writedata.innerHTML += write(
+              x.img,
+              x.title,
+              x.teacherFullname,
+              x.islocked,
+              x.class
+            );
+          });
+          chanflow();
 
-    
-    
-</script>
-</body>
+          let errormesage = document.getElementById("errormesage");
+          if (writedata.children.length == 0) {
+            errormesage.innerText = "Not found ...";
+          } else errormesage.innerText = "";
+        });
+      }
+    </script>
+  </body>
 </html>

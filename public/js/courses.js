@@ -7,7 +7,6 @@ async function  showcours(){
 }
 
 showcours().then((c) => {
-  console.log(c)
   let writedata = document.getElementById("writedata");
   writedata.innerHTML=''
   c.forEach((x) => {
@@ -16,19 +15,20 @@ showcours().then((c) => {
         x.title,
         x.teacherFullname,
         x.islocked,
-        x.class
+        x.class,
+        x.id
       );
       
     });
     chanflow()
   });
   
-function write(image, title, teacher, active, numberclass) {
+function write(image, title, teacher, active, numberclass,id) {
   let ac = "";
   if (!active) ac = "hidden";
 
   return `
-       <tr class="bg-white border-b capitalize ${ac} dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+       <tr id='${id}' class="bg-white border-b capitalize ${ac} dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <td class="w-32 p-4">
                     <img src="" alt="${title}">
                 </td>

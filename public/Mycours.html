@@ -7,206 +7,194 @@
     <link rel="stylesheet" href="./style/tailwindcss.css" />
   </head>
   <body class="bg-[#f5f8fa] duration-500 relative dark:bg-[#151521]">
+    <style>
+      .hide12 {
+        animation: bgop 0.7s linear forwards;
+      }
+      @keyframes bgop {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0.4;
+        }
+      }
+
+      .hidere {
+        animation: bgopre 0.5s linear forwards;
+      }
+      @keyframes bgopre {
+        0% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .quastion{
+        animation: quastio .5s linear  forwards;
+      }
+
+      @keyframes quastio {
+          from{
+            right: -100%;
+          }
+          to{
+            right: 0%;
+          }
+      }
+
+      .quastion2{
+        animation: quastio2 .5s linear  forwards;
+      }
+
+      @keyframes quastio2 {
+          from{
+            right: 0%;
+          }
+          to{
+            right: -100%;
+          }
+      }
+    </style>
     <div class="dashboard">
-         <div class="text-center my-10 dark:text-white font-semibold text-3xl opacity-90 text-black">
-    <h1>My courses </h1>
-  </div>
-        <div class="flex justify-around  space-y-4   w-full flex-wrap ">
-
-            <div
-              class="rounded-lg w-full md:w-[49%]  max-w-sm bg-white  mt-4 border lg:w-[33%] border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
-            >
-              <div class="py-10">
-                <div class="flex justify-around">
-                  <div class="flex space-x-3">
-                    <div class="">
-                      <img
-                        class="w-24 h-24 mb-3 rounded-full shadow-lg"
-                        src="./images/1_S_dlfFM8lDapyWzREmhcuw.jpg"
-                        alt="Bonnie image"
-                      />
-                    </div>
-                    <div class="mt-5">
-                      <h1
-                        class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
-                      >
-                        Mohamed Farj Allah
-                      </h1>
-                      <h5 class="text-sm text-gray-500 dark:text-gray-400">
-                        Visual Designer
-                      </h5>
-                    </div>
-                  </div>
+          <nav class="flex px-5 py-3 text-gray-700 duration-500 rounded-lg bg-gray-50 dark:bg-[#1E293B] mb-5" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+          <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+              </path>
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fillrule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" cliprule="evenodd"></path>
+            </svg>
+            <a href="#" class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">My courses</a>
+          </div>
+        </li>
+      </ol>
+    </nav>
+      <div
+        class="text-center my-10 dark:text-white font-semibold text-3xl opacity-90 text-black"
+      >
+        <h1>My courses</h1>
+      </div>
+      <div id="content" class="flex justify-around space-y-4 w-full flex-wrap">
+        <div
+     
+          class="rounded-lg  w-full md:w-[49%] max-w-sm bg-white mt-4 border lg:w-[33%] border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <!-- <div class="py-10">
+            <div class="flex justify-around">
+              <div class="flex space-x-3">
+                <div class="">
+                  <img
+                    class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                    src="./images/1_S_dlfFM8lDapyWzREmhcuw.jpg"
+                    alt="Bonnie image"
+                  />
                 </div>
-                <div class="flex justify-center mt-2">
-                <div class="flex  space-x-3 ">
-                  <div class="flex mt-1 cursor-pointer  -space-x-4">
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <a
-                      class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
-                      href="#"
-                      >+99</a
-                    >
-                  </div>
-                     <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >Question</a
+                <div class="mt-5">
+                  <h1
+                    class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
                   >
-                  <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >Exams</a
-                  >
-                </div>
+                    Mohamed Farj Allah
+                  </h1>
+                  <h5 class="text-sm text-gray-500 dark:text-gray-400">
+                    Visual Designer
+                  </h5>
                 </div>
               </div>
             </div>
-                    <div
-              class="rounded-lg w-full md:w-[49%]  max-w-sm bg-white  mt-4 border lg:w-[33%] border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
-            >
-              <div class="py-10">
-                <div class="flex justify-around">
-                  <div class="flex space-x-3">
-                    <div class="">
-                      <img
-                        class="w-24 h-24 mb-3 rounded-full shadow-lg"
-                        src="./images/1_S_dlfFM8lDapyWzREmhcuw.jpg"
-                        alt="Bonnie image"
-                      />
-                    </div>
-                    <div class="mt-5">
-                      <h1
-                        class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
-                      >
-                        Mohamed Farj Allah
-                      </h1>
-                      <h5 class="text-sm text-gray-500 dark:text-gray-400">
-                        Visual Designer
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex justify-center mt-2">
-                <div class="flex  space-x-3 ">
-                  <div class="flex mt-1 cursor-pointer  -space-x-4">
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <a
-                      class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
-                      href="#"
-                      >+99</a
-                    >
-                  </div>
-                     <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >Question</a
-                  >
+            <div class="flex justify-center mt-2">
+              <div class="flex space-x-3">
+                <div class="flex mt-1 cursor-pointer -space-x-4">
+                  <img
+                    class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
+                    src="./images/mohamed.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
+                    src="./images/mohamed.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
+                    src="./images/mohamed.jpg"
+                    alt=""
+                  />
                   <a
+                    class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
                     href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >Exams</a
+                    >+99</a
                   >
                 </div>
-                </div>
+                <a
+                   id="1"
+                  class="inline-flex cursor-pointer cards items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+                  >Question</a
+                >
+                <a
+                  href="#"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+                  >Exams</a
+                >
               </div>
             </div>
-                    <div
-              class="rounded-lg w-full md:w-[49%]  max-w-sm bg-white  mt-4 border lg:w-[33%] border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700"
-            >
-              <div class="py-10">
-                <div class="flex justify-around">
-                  <div class="flex space-x-3">
-                    <div class="">
-                      <img
-                        class="w-24 h-24 mb-3 rounded-full shadow-lg"
-                        src="./images/1_S_dlfFM8lDapyWzREmhcuw.jpg"
-                        alt="Bonnie image"
-                      />
-                    </div>
-                    <div class="mt-5">
-                      <h1
-                        class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
-                      >
-                        Mohamed Farj Allah
-                      </h1>
-                      <h5 class="text-sm text-gray-500 dark:text-gray-400">
-                        Visual Designer
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex justify-center mt-2">
-                <div class="flex  space-x-3 ">
-                  <div class="flex mt-1 cursor-pointer  -space-x-4">
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <img
-                      class="w-8 h-8 border-2 border-white rounded-full dark:border-gray-800"
-                      src="./images/mohamed.jpg"
-                      alt=""
-                    />
-                    <a
-                      class="flex items-center justify-center w-8 h-8 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
-                      href="#"
-                      >+99</a
-                    >
-                  </div>
-                     <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >Question</a
-                  >
-                  <a
-                    href="#"
-                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >Exams</a
-                  >
-                </div>
-                </div>
-              </div>
-            </div>
+          </div> -->
         </div>
-
+      </div>
+    </div>
+    <div id="munua">
+      <!-- <div id="1" class="w-full Quastion h-screen hidden fixed top-0 left-0 z-50">
+        <div
+          id="contentquastion"
+          class="fixed duration-500 quastion z-50 h-screen sm:w-96 w-full top-0 right-0 dark:bg-gray-800 bg-white font-medium text-gray-900 dark:text-white"
+        >
+          <div class="w-[90%] mx-auto">
+            <div class="flex justify-between mt-3">
+              <h1 class="text-3xl cursor-pointer xmark" >x</h1>
+              <h1 class="text-2xl mt-1">Quastion Type</h1>
+            </div>
+            <h1 class="text-center mt-[10%] text-2xl">courses Title</h1>
+            <div class="mt-[10%]">
+              <div class="flex justify-between">
+                <div>
+                  <h1>choose</h1>
+                </div>
+                <div>
+                  <h1>choose</h1>
+                </div>
+                <div>
+                  <h1>choose</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black background fixed top-0 left-0 duration-500 z-40 w-full h-screen hide12"
+        ></div>
+      </div> -->
     </div>
 
+
+
+
+    
     <script src="./js/db.js"></script>
     <script src="./js/dashboard.js"></script>
+    <script src="./js/Mycours.js"></script>
+    <script>
+
+
+    </script>
   </body>
 </html>
